@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+<context:annotation-config />
+	<!-- <bean class="com.springcore.lifecycle.Bean" name="b1"
+		init-method="init" destroy-method="distroy">
+		<property name="price" value="10" />
+
+	</bean>
+
+	<bean class="com.springcore.lifecycle.Pepsi" name="p1">
+		<property name="price" value="60" />
+	</bean> -->
+	
+	<bean class="com.springcore.lifecycle.example" name="example">
+	<property name="subject" value="html"/>
+	</bean>
+</beans>
